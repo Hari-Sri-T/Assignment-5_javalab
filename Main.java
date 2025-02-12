@@ -27,7 +27,18 @@ class Main{
 		
 		System.out.println("Area of Triangle is: "+ rectangle.calculateArea());
 		System.out.println("Perimeter of Triangle is: "+ rectangle.calculatePerimeter());
-		System.out.println("___________________________________________");		
+		System.out.println("___________________________________________");	
+
+
+        System.out.println("Enter side of Cube: ");
+		double side = Double.parseDouble(scan.nextLine());
+	    System.out.println("___________________________________________");	
+		Shape cube = new Cube(side);
+		
+		System.out.println("Total Surface Area of Cube is: "+ cube.calculateArea());
+		System.out.println("Perimeter of Cube is: "+ cube.calculatePerimeter());
+		System.out.println("Volume of Cube is: "+ cube.calculateVolume());
+		System.out.println("___________________________________________");			
 	}
 	
 }

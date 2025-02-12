@@ -12,4 +12,8 @@ class Triangle extends Shape{
 	public double calculatePerimeter(){
 		return (dim_one + dim_two) + Math.sqrt((dim_one * dim_one) + (dim_two * dim_two));
 	}
+	
+	public double calculateVolume(){
+		return 0;
+	}
 }
