@@ -16,11 +16,11 @@ abstract class Shape{
 		this.dim_one = dim_one;
 		this.dim_two = dim_two;
 		this.dim_three = dim_three;
-		this num_sides = num_sides;
+		this.num_sides = num_sides;
 	}
 	
-	abstract public void calculateArea(); //Abstract Methods
-	abstract public void calculatePerimeter();
+	abstract public double calculateArea(); //Abstract Methods
+	abstract public double calculatePerimeter();
 	
 	public int getNumSides(){
 		return num_sides;
