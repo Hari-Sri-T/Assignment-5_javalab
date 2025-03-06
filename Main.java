@@ -1,4 +1,7 @@
 //Main.java
+// Tanniru Hari Sri Shanmukha Sai
+// 23070126135
+// AIML B3
 
 import java.util.*;
 class Main{
@@ -61,8 +64,8 @@ class Main{
 		System.out.println("___________________________________________");	
 		Shape circle = new Circle(radius);
 		
-		System.out.println("Area of Square is: "+ circle.calculateArea());
-		System.out.println("Perimeter of Square is: "+ circle.calculatePerimeter());
+		System.out.println("Area of Circle is: "+ circle.calculateArea());
+		System.out.println("Perimeter of Circle is: "+ circle.calculatePerimeter());
 		System.out.println("___________________________________________");		
 		
 		// Sphere
@@ -71,9 +74,9 @@ class Main{
 	    System.out.println("___________________________________________");	
 		Shape sphere = new Sphere(radius2);
 		
-		System.out.println("Total Surface Area of Cube is: "+ sphere.calculateArea());
-		System.out.println("Perimeter of Cube is: "+ sphere.calculatePerimeter());
-		System.out.println("Volume of Cube is: "+ sphere.calculateVolume());
+		System.out.println("Total Surface Area of Sphere is: "+ sphere.calculateArea());
+		System.out.println("Perimeter of Sphere is: "+ sphere.calculatePerimeter());
+		System.out.println("Volume of Sphere is: "+ sphere.calculateVolume());
 		System.out.println("___________________________________________");		
 		
 		// Cylinder
@@ -88,12 +91,28 @@ class Main{
 	    System.out.println("___________________________________________");	
 		Shape cylinder = new Cylinder(radius3,height2);
 		
-		System.out.println("Total Surface Area of Cube is: "+ cylinder.calculateArea());
-		System.out.println("Perimeter of Cube is: "+ cylinder.calculatePerimeter());
-		System.out.println("Volume of Cube is: "+ cylinder.calculateVolume());
+		System.out.println("Total Surface Area of Cylinder is: "+ cylinder.calculateArea());
+		System.out.println("Perimeter of Cylinder is: "+ cylinder.calculatePerimeter());
+		System.out.println("Volume of Cylinder is: "+ cylinder.calculateVolume());
 		System.out.println("___________________________________________");		
 		
 
+		// Equilateral Pyramid
+		
+		System.out.println("Enter radius of Equilateral Pyramid:  ");
+		double side3 = Double.parseDouble(scan.nextLine());
+		
+		
+		System.out.println("Enter Height of Equilateral Pyramid:  ");
+		double height3 = Double.parseDouble(scan.nextLine());
+		
+	    System.out.println("___________________________________________");	
+		Shape ep = new EquilateralPyramid(side3,height3);
+		
+		System.out.println("Total Surface Area of Equilateral Pyramid is: "+ ep.calculateArea());
+		System.out.println("Perimeter of Base of Equilateral Pyramid is: "+ ep.calculatePerimeter());
+		System.out.println("Volume of Equilateral Pyramid is: "+ ep.calculateVolume());
+		System.out.println("___________________________________________");	
 		
 	}
 	
