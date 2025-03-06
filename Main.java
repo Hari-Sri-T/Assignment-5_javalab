@@ -25,8 +25,8 @@ class Main{
 		System.out.println("___________________________________________");	
 		Shape rectangle = new Rectangle(length, breadth);
 		
-		System.out.println("Area of Triangle is: "+ rectangle.calculateArea());
-		System.out.println("Perimeter of Triangle is: "+ rectangle.calculatePerimeter());
+		System.out.println("Area of Rectangle is: "+ rectangle.calculateArea());
+		System.out.println("Perimeter of Rectangle is: "+ rectangle.calculatePerimeter());
 		System.out.println("___________________________________________");	
 
 
@@ -38,6 +38,16 @@ class Main{
 		System.out.println("Total Surface Area of Cube is: "+ cube.calculateArea());
 		System.out.println("Perimeter of Cube is: "+ cube.calculatePerimeter());
 		System.out.println("Volume of Cube is: "+ cube.calculateVolume());
+		System.out.println("___________________________________________");		
+
+		System.out.println("Enter side of Square: ");
+		double side2 = Double.parseDouble(scan.nextLine());
+		
+		System.out.println("___________________________________________");	
+		Shape square = new Square(side2);
+		
+		System.out.println("Area of Square is: "+ square.calculateArea());
+		System.out.println("Perimeter of Square is: "+ square.calculatePerimeter());
 		System.out.println("___________________________________________");			
 	}
 	
