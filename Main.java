@@ -64,6 +64,18 @@ class Main{
 		System.out.println("Area of Square is: "+ circle.calculateArea());
 		System.out.println("Perimeter of Square is: "+ circle.calculatePerimeter());
 		System.out.println("___________________________________________");		
+		
+		// Sphere
+		System.out.println("Enter radius of Sphere: ");
+		double radius2 = Double.parseDouble(scan.nextLine());
+	    System.out.println("___________________________________________");	
+		Shape sphere = new Sphere(radius2);
+		
+		System.out.println("Total Surface Area of Cube is: "+ sphere.calculateArea());
+		System.out.println("Perimeter of Cube is: "+ sphere.calculatePerimeter());
+		System.out.println("Volume of Cube is: "+ sphere.calculateVolume());
+		System.out.println("___________________________________________");		
+		
 
 		
 	}
