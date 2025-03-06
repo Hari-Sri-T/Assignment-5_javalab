@@ -4,6 +4,8 @@ import java.util.*;
 class Main{
 	public static void main(String args[]){
 		Scanner scan = new Scanner(System.in);
+		
+		// Triangle
 		System.out.println("Enter base of Traingle: ");
 		double base = Double.parseDouble(scan.nextLine());
 		
@@ -16,6 +18,7 @@ class Main{
 		System.out.println("Perimeter of Triangle is: "+ traingle.calculatePerimeter());
 		System.out.println("___________________________________________");		
 		
+		// Rectangle
 		System.out.println("Enter length of Rectangle: ");
 		double length = Double.parseDouble(scan.nextLine());
 		
@@ -29,7 +32,7 @@ class Main{
 		System.out.println("Perimeter of Rectangle is: "+ rectangle.calculatePerimeter());
 		System.out.println("___________________________________________");	
 
-
+		// Cube
         System.out.println("Enter side of Cube: ");
 		double side = Double.parseDouble(scan.nextLine());
 	    System.out.println("___________________________________________");	
@@ -39,7 +42,8 @@ class Main{
 		System.out.println("Perimeter of Cube is: "+ cube.calculatePerimeter());
 		System.out.println("Volume of Cube is: "+ cube.calculateVolume());
 		System.out.println("___________________________________________");		
-
+		
+        // Square
 		System.out.println("Enter side of Square: ");
 		double side2 = Double.parseDouble(scan.nextLine());
 		
@@ -48,7 +52,20 @@ class Main{
 		
 		System.out.println("Area of Square is: "+ square.calculateArea());
 		System.out.println("Perimeter of Square is: "+ square.calculatePerimeter());
-		System.out.println("___________________________________________");			
+		System.out.println("___________________________________________");		
+        
+		// Circle
+		System.out.println("Enter radius of circle: ");
+		double radius = Double.parseDouble(scan.nextLine());
+		
+		System.out.println("___________________________________________");	
+		Shape circle = new Circle(radius);
+		
+		System.out.println("Area of Square is: "+ circle.calculateArea());
+		System.out.println("Perimeter of Square is: "+ circle.calculatePerimeter());
+		System.out.println("___________________________________________");		
+
+		
 	}
 	
 }
