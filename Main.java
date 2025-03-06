@@ -2,118 +2,130 @@
 // Tanniru Hari Sri Shanmukha Sai
 // 23070126135
 // AIML B3
-
 import java.util.*;
-class Main{
-	public static void main(String args[]){
-		Scanner scan = new Scanner(System.in);
-		
-		// Triangle
-		System.out.println("Enter base of Traingle: ");
-		double base = Double.parseDouble(scan.nextLine());
-		
-		System.out.println("Enter height of Traingle: ");
-		double height = Double.parseDouble(scan.nextLine());
-		System.out.println("___________________________________________");
-		Triangle traingle = new Triangle(base, height);
-		
-		System.out.println("Area of Triangle is: "+ traingle.calculateArea());
-		System.out.println("Perimeter of Triangle is: "+ traingle.calculatePerimeter());
-		System.out.println("___________________________________________");		
-		
-		// Rectangle
-		System.out.println("Enter length of Rectangle: ");
-		double length = Double.parseDouble(scan.nextLine());
-		
-		System.out.println("Enter breadth of Rectangle: ");
-		double breadth = Double.parseDouble(scan.nextLine());
-		
-		System.out.println("___________________________________________");	
-		Rectangle rectangle = new Rectangle(length, breadth);
-		
-		System.out.println("Area of Rectangle is: "+ rectangle.calculateArea());
-		System.out.println("Perimeter of Rectangle is: "+ rectangle.calculatePerimeter());
-		System.out.println("___________________________________________");	
 
-		// Cube
-        System.out.println("Enter side of Cube: ");
-		double side = Double.parseDouble(scan.nextLine());
-	    System.out.println("___________________________________________");	
-		Cube cube = new Cube(side);
-		
-		System.out.println("Total Surface Area of Cube is: "+ cube.calculateArea());
-		System.out.println("Perimeter of Cube is: "+ cube.calculatePerimeter());
-		System.out.println("Volume of Cube is: "+ cube.calculateVolume());
-		System.out.println("___________________________________________");		
-		
-        // Square
-		System.out.println("Enter side of Square: ");
-		double side2 = Double.parseDouble(scan.nextLine());
-		
-		System.out.println("___________________________________________");	
-		Square square = new Square(side2);
-		
-		System.out.println("Area of Square is: "+ square.calculateArea());
-		System.out.println("Perimeter of Square is: "+ square.calculatePerimeter());
-		System.out.println("___________________________________________");		
+class Main {
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
         
-		// Circle
-		System.out.println("Enter radius of circle: ");
-		double radius = Double.parseDouble(scan.nextLine());
-		
-		System.out.println("___________________________________________");	
-		Circle circle = new Circle(radius);
-		
-		System.out.println("Area of Circle is: "+ circle.calculateArea());
-		System.out.println("Perimeter of Circle is: "+ circle.calculatePerimeter());
-		System.out.println("___________________________________________");		
-		
-		// Sphere
-		System.out.println("Enter radius of Sphere: ");
-		double radius2 = Double.parseDouble(scan.nextLine());
-	    System.out.println("___________________________________________");	
-		Sphere sphere = new Sphere(radius2);
-		
-		System.out.println("Total Surface Area of Sphere is: "+ sphere.calculateArea());
-		System.out.println("Perimeter of Sphere is: "+ sphere.calculatePerimeter());
-		System.out.println("Volume of Sphere is: "+ sphere.calculateVolume());
-		System.out.println("___________________________________________");		
-		
-		// Cylinder
-		
-		System.out.println("Enter radius of Cylinder:  ");
-		double radius3 = Double.parseDouble(scan.nextLine());
-		
-		
-		System.out.println("Enter Height of Cylinder:  ");
-		double height2 = Double.parseDouble(scan.nextLine());
-		
-	    System.out.println("___________________________________________");	
-		Cylinder cylinder = new Cylinder(radius3,height2);
-		
-		System.out.println("Total Surface Area of Cylinder is: "+ cylinder.calculateArea());
-		System.out.println("Perimeter of Cylinder is: "+ cylinder.calculatePerimeter());
-		System.out.println("Volume of Cylinder is: "+ cylinder.calculateVolume());
-		System.out.println("___________________________________________");		
-		
+        while (true) { // Infinite loop to keep menu running
+            System.out.println("===========================================");
+            System.out.println("            SHAPE CALCULATOR");
+            System.out.println("===========================================");
+            System.out.println("1. Triangle");
+            System.out.println("2. Rectangle");
+            System.out.println("3. Cube");
+            System.out.println("4. Square");
+            System.out.println("5. Circle");
+            System.out.println("6. Sphere");
+            System.out.println("7. Cylinder");
+            System.out.println("8. Equilateral Pyramid");
+            System.out.println("9. Exit");
+            System.out.println("===========================================");
+            System.out.print("Enter your choice: ");
 
-		// Equilateral Pyramid
-		
-		System.out.println("Enter radius of Equilateral Pyramid:  ");
-		double side3 = Double.parseDouble(scan.nextLine());
-		
-		
-		System.out.println("Enter Height of Equilateral Pyramid:  ");
-		double height3 = Double.parseDouble(scan.nextLine());
-		
-	    System.out.println("___________________________________________");	
-		EquilateralPyramid ep = new EquilateralPyramid(side3,height3);
-		
-		System.out.println("Total Surface Area of Equilateral Pyramid is: "+ ep.calculateArea());
-		System.out.println("Perimeter of Base of Equilateral Pyramid is: "+ ep.calculatePerimeter());
-		System.out.println("Volume of Equilateral Pyramid is: "+ ep.calculateVolume());
-		System.out.println("___________________________________________");	
-		
-	}
-	
+            int choice = Integer.parseInt(scan.nextLine());
+            System.out.println("-------------------------------------------");
+
+            switch (choice) {
+                case 1: // Triangle
+                    System.out.println("Enter base of Triangle: ");
+                    double base = Double.parseDouble(scan.nextLine());
+
+                    System.out.println("Enter height of Triangle: ");
+                    double height = Double.parseDouble(scan.nextLine());
+
+                    Triangle triangle = new Triangle(base, height);
+                    System.out.println("Area of Triangle: " + triangle.calculateArea());
+                    System.out.println("Perimeter of Triangle: " + triangle.calculatePerimeter());
+                    break;
+
+                case 2: // Rectangle
+                    System.out.println("Enter length of Rectangle: ");
+                    double length = Double.parseDouble(scan.nextLine());
+
+                    System.out.println("Enter breadth of Rectangle: ");
+                    double breadth = Double.parseDouble(scan.nextLine());
+
+                    Rectangle rectangle = new Rectangle(length, breadth);
+                    System.out.println("Area of Rectangle: " + rectangle.calculateArea());
+                    System.out.println("Perimeter of Rectangle: " + rectangle.calculatePerimeter());
+                    break;
+
+                case 3: // Cube
+                    System.out.println("Enter side of Cube: ");
+                    double side = Double.parseDouble(scan.nextLine());
+
+                    Cube cube = new Cube(side);
+                    System.out.println("Total Surface Area of Cube: " + cube.calculateArea());
+                    System.out.println("Perimeter of Cube: " + cube.calculatePerimeter());
+                    System.out.println("Volume of Cube: " + cube.calculateVolume());
+                    break;
+
+                case 4: // Square
+                    System.out.println("Enter side of Square: ");
+                    double side2 = Double.parseDouble(scan.nextLine());
+
+                    Square square = new Square(side2);
+                    System.out.println("Area of Square: " + square.calculateArea());
+                    System.out.println("Perimeter of Square: " + square.calculatePerimeter());
+                    break;
+
+                case 5: // Circle
+                    System.out.println("Enter radius of Circle: ");
+                    double radius = Double.parseDouble(scan.nextLine());
+
+                    Circle circle = new Circle(radius);
+                    System.out.println("Area of Circle: " + circle.calculateArea());
+                    System.out.println("Perimeter of Circle: " + circle.calculatePerimeter());
+                    break;
+
+                case 6: // Sphere
+                    System.out.println("Enter radius of Sphere: ");
+                    double radius2 = Double.parseDouble(scan.nextLine());
+
+                    Sphere sphere = new Sphere(radius2);
+                    System.out.println("Total Surface Area of Sphere: " + sphere.calculateArea());
+                    System.out.println("Perimeter of Sphere: " + sphere.calculatePerimeter());
+                    System.out.println("Volume of Sphere: " + sphere.calculateVolume());
+                    break;
+
+                case 7: // Cylinder
+                    System.out.println("Enter radius of Cylinder: ");
+                    double radius3 = Double.parseDouble(scan.nextLine());
+
+                    System.out.println("Enter height of Cylinder: ");
+                    double height2 = Double.parseDouble(scan.nextLine());
+
+                    Cylinder cylinder = new Cylinder(radius3, height2);
+                    System.out.println("Total Surface Area of Cylinder: " + cylinder.calculateArea());
+                    System.out.println("Perimeter of Cylinder: " + cylinder.calculatePerimeter());
+                    System.out.println("Volume of Cylinder: " + cylinder.calculateVolume());
+                    break;
+
+                case 8: // Equilateral Pyramid
+                    System.out.println("Enter side of Equilateral Pyramid: ");
+                    double side3 = Double.parseDouble(scan.nextLine());
+
+                    System.out.println("Enter height of Equilateral Pyramid: ");
+                    double height3 = Double.parseDouble(scan.nextLine());
+
+                    EquilateralPyramid ep = new EquilateralPyramid(side3, height3);
+                    System.out.println("Total Surface Area of Equilateral Pyramid: " + ep.calculateArea());
+                    System.out.println("Perimeter of Base of Equilateral Pyramid: " + ep.calculatePerimeter());
+                    System.out.println("Volume of Equilateral Pyramid: " + ep.calculateVolume());
+                    break;
+
+                case 9: // Exit program
+                    System.out.println("\nExiting program... Thank you!");
+                    scan.close();
+                    return;
+
+                default:
+                    System.out.println("Invalid choice! Please enter a number between 1 and 9.");
+            }
+
+            System.out.println("-------------------------------------------\n");
+        }
+    }
 }
