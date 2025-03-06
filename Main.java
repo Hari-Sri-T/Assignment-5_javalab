@@ -15,7 +15,7 @@ class Main{
 		System.out.println("Enter height of Traingle: ");
 		double height = Double.parseDouble(scan.nextLine());
 		System.out.println("___________________________________________");
-		Shape traingle = new Triangle(base, height);
+		Triangle traingle = new Triangle(base, height);
 		
 		System.out.println("Area of Triangle is: "+ traingle.calculateArea());
 		System.out.println("Perimeter of Triangle is: "+ traingle.calculatePerimeter());
@@ -29,7 +29,7 @@ class Main{
 		double breadth = Double.parseDouble(scan.nextLine());
 		
 		System.out.println("___________________________________________");	
-		Shape rectangle = new Rectangle(length, breadth);
+		Rectangle rectangle = new Rectangle(length, breadth);
 		
 		System.out.println("Area of Rectangle is: "+ rectangle.calculateArea());
 		System.out.println("Perimeter of Rectangle is: "+ rectangle.calculatePerimeter());
@@ -39,7 +39,7 @@ class Main{
         System.out.println("Enter side of Cube: ");
 		double side = Double.parseDouble(scan.nextLine());
 	    System.out.println("___________________________________________");	
-		Shape cube = new Cube(side);
+		Cube cube = new Cube(side);
 		
 		System.out.println("Total Surface Area of Cube is: "+ cube.calculateArea());
 		System.out.println("Perimeter of Cube is: "+ cube.calculatePerimeter());
@@ -51,7 +51,7 @@ class Main{
 		double side2 = Double.parseDouble(scan.nextLine());
 		
 		System.out.println("___________________________________________");	
-		Shape square = new Square(side2);
+		Square square = new Square(side2);
 		
 		System.out.println("Area of Square is: "+ square.calculateArea());
 		System.out.println("Perimeter of Square is: "+ square.calculatePerimeter());
@@ -62,7 +62,7 @@ class Main{
 		double radius = Double.parseDouble(scan.nextLine());
 		
 		System.out.println("___________________________________________");	
-		Shape circle = new Circle(radius);
+		Circle circle = new Circle(radius);
 		
 		System.out.println("Area of Circle is: "+ circle.calculateArea());
 		System.out.println("Perimeter of Circle is: "+ circle.calculatePerimeter());
@@ -72,7 +72,7 @@ class Main{
 		System.out.println("Enter radius of Sphere: ");
 		double radius2 = Double.parseDouble(scan.nextLine());
 	    System.out.println("___________________________________________");	
-		Shape sphere = new Sphere(radius2);
+		Sphere sphere = new Sphere(radius2);
 		
 		System.out.println("Total Surface Area of Sphere is: "+ sphere.calculateArea());
 		System.out.println("Perimeter of Sphere is: "+ sphere.calculatePerimeter());
@@ -89,7 +89,7 @@ class Main{
 		double height2 = Double.parseDouble(scan.nextLine());
 		
 	    System.out.println("___________________________________________");	
-		Shape cylinder = new Cylinder(radius3,height2);
+		Cylinder cylinder = new Cylinder(radius3,height2);
 		
 		System.out.println("Total Surface Area of Cylinder is: "+ cylinder.calculateArea());
 		System.out.println("Perimeter of Cylinder is: "+ cylinder.calculatePerimeter());
@@ -107,7 +107,7 @@ class Main{
 		double height3 = Double.parseDouble(scan.nextLine());
 		
 	    System.out.println("___________________________________________");	
-		Shape ep = new EquilateralPyramid(side3,height3);
+		EquilateralPyramid ep = new EquilateralPyramid(side3,height3);
 		
 		System.out.println("Total Surface Area of Equilateral Pyramid is: "+ ep.calculateArea());
 		System.out.println("Perimeter of Base of Equilateral Pyramid is: "+ ep.calculatePerimeter());

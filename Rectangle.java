@@ -14,7 +14,5 @@ class Rectangle extends Shape{
 		return 2 * (dim_one + dim_two);
 	}
 	
-	public double calculateVolume(){
-		return 0;
-	}
+
 }

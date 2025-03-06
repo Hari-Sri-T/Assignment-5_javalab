@@ -2,7 +2,7 @@
 
 
 import java.lang.*;
-class EquilateralPyramid extends Shape{
+class EquilateralPyramid extends Shape implements VolumeInterface{
 	public EquilateralPyramid(double side,double height){
 		super(side,height,0,0);	
 	}

@@ -16,7 +16,5 @@ class Circle extends Shape{
 		return 2 * 3.14 *(dim_one);
 	}
 	
-	public double calculateVolume(){
-		return 0;
-	}
+
 }

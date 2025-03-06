@@ -15,7 +15,5 @@ class Square extends Shape{
 		return 4 * (dim_one);
 	}
 	
-	public double calculateVolume(){
-		return 0;
-	}
+
 }
