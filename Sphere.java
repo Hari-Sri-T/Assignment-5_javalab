@@ -3,7 +3,7 @@
 import java.lang.*;
 class Sphere extends Shape{
 	public Sphere(double radius){
-		super(radius,0,0,4);	
+		super(radius,0,0,0);	
 	}
 	
 	public double calculateArea(){

@@ -76,6 +76,23 @@ class Main{
 		System.out.println("Volume of Cube is: "+ sphere.calculateVolume());
 		System.out.println("___________________________________________");		
 		
+		// Cylinder
+		
+		System.out.println("Enter radius of Cylinder:  ");
+		double radius3 = Double.parseDouble(scan.nextLine());
+		
+		
+		System.out.println("Enter Height of Cylinder:  ");
+		double height2 = Double.parseDouble(scan.nextLine());
+		
+	    System.out.println("___________________________________________");	
+		Shape cylinder = new Cylinder(radius3,height2);
+		
+		System.out.println("Total Surface Area of Cube is: "+ cylinder.calculateArea());
+		System.out.println("Perimeter of Cube is: "+ cylinder.calculatePerimeter());
+		System.out.println("Volume of Cube is: "+ cylinder.calculateVolume());
+		System.out.println("___________________________________________");		
+		
 
 		
 	}
